@@ -1,0 +1,198 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 25px;
+}
+h3{
+    font-size: 20px;
+}
+
+/*header*/
+
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(120, 120, 120);
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+}
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+.páginas{
+    display: flex;
+    list-style-type: none; 
+}
+.páginas li a{
+    color: rgb(2, 2, 2);
+    text-decoration: none;
+    margin: 2px;
+    padding: 2px;
+    font-size: small;
+}
+.páginas li:hover {
+    background-color:  rgb(227, 227, 227);
+    font-size: large;
+}
+
+main{
+    height: auto;
+    background-color: rgb(227, 227, 227);
+}
+
+
+/*footer*/
+
+footer{
+    height: 100px;
+    background-color:rgb(120, 120, 120);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    width: auto;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+.redes img{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.redes li img{
+    width: 35px;
+}
+.redes li{
+    list-style-type: none;
+    width: auto;
+}
+
+/*index*/
+
+.conteiner-video{
+    width: 100%;
+    padding: 10px;
+    padding-top: 15px;
+}
+video {
+    width: 100%;
+}
+.destacados{ 
+    padding: 5px;
+}
+.proyectos {
+    margin-top: 10px;
+}
+.dtxt{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.dtxt a{
+    text-decoration: none;
+    color: black;
+}
+.parrafo-destacado{
+padding: 10px;
+}
+.dtxt button{
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgba(0, 128, 0, 0.626);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.dtxt .Contame-tu-idea{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-items: center;
+    align-items: center;
+    background-color: azure;
+    padding-bottom: 10px;
+}
+.dtxt .sobre-mi{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-items: center;
+    align-items: center;
+    background-color: azure;
+    padding-bottom: 10px;
+}
+
+/* sobre mi*/
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+form label{
+    margin: 10px;
+    margin-top: 20px;
+
+}
+
+/* contame tu idea*/
+.parrafo-idea{
+    padding: 20px;
+}
+.botonform{
+    display: flex;
+    justify-content: center;
+}
+.botonform input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:20px;
+    width: 80px;
+    height: 30px;
+}
+.booton-reset{
+    background-color: rgba(255, 1, 1, 0.336);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.booton-submit{
+    background-color: rgba(0, 128, 0, 0.626);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+

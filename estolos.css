@@ -5,6 +5,8 @@
 }
 h1{
     font-size: 30px;
+    padding: 5px;
+    padding-top: 7px;
 }
 h2{
     font-size: 25px;
@@ -19,20 +21,19 @@ header{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    background-color: rgb(120, 120, 120);
+    background-color: rgb(215, 246, 114);
     justify-items: center;
     align-items: center;
     height: 100%;
 }
-.nav ul{
+
+ .páginas{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
-}
-.páginas{
     display: flex;
-    list-style-type: none; 
+    list-style-type: none;
 }
 .páginas li a{
     color: rgb(2, 2, 2);
@@ -40,12 +41,19 @@ header{
     margin: 2px;
     padding: 2px;
     font-size: small;
+    font-weight: bold;
+}
+@media (min-width: 960px) {
+    .páginas li a {
+        font-size: large;
+    }
 }
 .páginas li:hover {
     background-color:  rgb(227, 227, 227);
     font-size: large;
 }
 
+/* main */
 main{
     height: auto;
     background-color: rgb(227, 227, 227);
@@ -56,7 +64,7 @@ main{
 
 footer{
     height: 100px;
-    background-color:rgb(120, 120, 120);
+    background-color:rgb(215, 246, 114);
     position: absolute;
     width: 100%;
     display: flex;
@@ -101,6 +109,8 @@ footer{
 video {
     width: 100%;
 }
+
+/* destacados index */
 .destacados{ 
     padding: 5px;
 }
@@ -112,6 +122,15 @@ video {
     flex-direction: column;
     margin: 10px;
 }
+@media (min-width:960px){
+    .dtxt {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(227, 227, 227);
+        padding: 20px;
+        text-align: center;
+    }
+}
 .dtxt a{
     text-decoration: none;
     color: black;
@@ -120,24 +139,30 @@ video {
 padding: 10px;
 }
 .dtxt button{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-content: center;
     padding-left: 5px;
     padding-right: 5px;
     background-color: rgba(0, 128, 0, 0.626);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
+}
+@media (min-width:960px){
+    .dtxt button{
+        border-radius: 5px;
+    }
 }
 
 .dtxt .Contame-tu-idea{
     display: flex;
     flex-direction: column;
     margin: 10px;
+    padding-top: 5px;
     justify-items: center;
     align-items: center;
-    background-color: azure;
+    background-color: rgb(255, 251, 240);
     padding-bottom: 10px;
+    border-radius: 10px;
 }
 .dtxt .sobre-mi{
     display: flex;
@@ -147,44 +172,128 @@ padding: 10px;
     align-items: center;
     background-color: azure;
     padding-bottom: 10px;
+    padding-top: 5px;
+    border-radius: 10px;
 }
+
+
+
+
 
 /* sobre mi*/
 
 form{
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    padding: 10px;
 }
+
 form label{
     margin: 10px;
     margin-top: 20px;
-
 }
+
 
 /* contame tu idea*/
+
 .parrafo-idea{
-    padding: 20px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: small;
+    text-align: center;
 }
+@media (min-width:960px){
+    .parrafo-idea{
+        font-size: medium;
+    }
+}
+.form .form-nombre{
+    width: 100%;
+    display: flex;
+}
+
+@media (min-width: 960px){
+    .form .form-nombre{
+        width: 95%;
+        margin-left: 10px;
+    }
+}
+.form .form-name{
+    width: 100%;
+}
+@media (min-width: 960px){
+    .form .form-name{
+        width: 95%;
+        margin-left: 10px;
+    }
+}
+.form .form-textconteiner{
+    width: 100%;
+}
+
+@media (min-width: 960px)  {
+    .form .form-textconteiner {
+        width: 95%;
+        margin-left: 10px;
+    }
+}
+
+.form .form-emailconteiner{
+    width: 100%;
+}
+@media (min-width: 960px)  {
+    .form .form-emailconteiner {
+        width: 95%;
+        margin-left: 10px;
+    }
+}
+.form .form-WhatsAppconteiner{
+    width: 100%;
+}
+@media (min-width: 960px){
+    .form .form-WhatsAppconteiner {
+        width: 95%;
+        margin-left: 10px;
+    }
+}
+
 .botonform{
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 960px) {
+    .botonform {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .botonform input{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin:20px;
-    width: 80px;
+    width: 90px;
     height: 30px;
 }
 .booton-reset{
-    background-color: rgba(255, 1, 1, 0.336);
+    background-color: rgba(255, 51, 51, 0.336);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    font-size: small;
+}
+@media (min-width: 960px){
+    .form .booton-reset{
+        border-radius: 5px;
+    }
 }
 .booton-submit{
     background-color: rgba(0, 128, 0, 0.626);
@@ -193,6 +302,12 @@ form label{
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    font-size: small;
+}
+@media (min-width: 960px) {
+    .form .booton-submit {
+        border-radius: 5px;
+    }
 }
 
 

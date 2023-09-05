@@ -102,8 +102,13 @@ footer{
 /*index*/
 
 .conteiner-video{
-    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
     padding: 10px;
+    margin-left: 20%;
     padding-top: 15px;
 }
 video {
@@ -111,8 +116,15 @@ video {
 }
 
 /* destacados index */
+
 .destacados{ 
     padding: 5px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
 .proyectos {
     margin-top: 10px;
@@ -310,4 +322,83 @@ form label{
     }
 }
 
+/*porfolio*/
+.porfolio{
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    justify-content: center;
+}
+.porfolio .porfolio_conteinerporf {
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+}
+.porfolio_conteinerporf_foto{
+    display: block;
+    background-color: aliceblue;
+    margin: 10px;
+    padding-bottom:  10px;
+}
+.porfolio_conteinerporf_foto p {
+    color: #000;
+    font-style: italic;
+    text-decoration: none;
+    padding: 2px;
+}
+.porfolio .porfolio_conteinerporf img{
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+}
 
+
+
+
+/*sobre mi*/
+
+.sobremi{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(227, 227, 227);
+}
+.sobremi section{
+width: 90%;
+padding: 5px;
+}
+.sobremi .sobremi_Titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.sobremi .sobremi_Titulo h1{
+    margin-top: 20px;
+}
+.sobremi .sobremi_enfoque{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.sobremi .sobremi_experiencias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.sobremi h2{
+    margin: 3px;
+    margin-bottom: 10px;
+}
+.sobremi p{
+    margin: 5px;
+    width: 80%;
+    font-weight:500;
+}
